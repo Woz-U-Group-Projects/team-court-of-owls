@@ -1,0 +1,19 @@
+#div  {
+    padding: 15px 20px 25px 30px;
+    background-color:green;
+  }
+
+  h1 {
+      color:white;
+  }
+  
+  .radio  {
+    border:5px;
+    border-style:solid;
+    border-color:#000000;
+    padding:75px;
+    margin-right:600px;
+    margin-left:150px;
+  }
+
+  
