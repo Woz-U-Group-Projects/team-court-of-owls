@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   <title>Genealogy App</title>
+
+    <link rel= "stylesheet" href="gene.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+  </head>
+  
+  <body>
+      <div id= "div">
+       <img id= "tree" src="tree.jpg" alt= "tree of life">
+        <h1> The Genealogy App </h1>       
+        </div>
+        <div id= "container">
+        <form class="gene-form" action="/info" method ="GET">
+    <h1>Find your Family</h1>
+   <div class="group">
+    <label for= "firstname" >First Name</label><br/>
+      <input type="text" name="firstname"id="first" required placeholder="What is your first name?"/>
+   </div>
+    <div class="group">
+      <label for="lastname">Last Name </label><br/>
+    <input type="text" id="lastname" name="last"
+           placeholder="What is your last name?">
+    </div> 
+    <div class="group">
+      <label for="age">Age</label><br/>
+    <input type="number" id="age" name="age" min="1"
+    max ="120" placeholder= "How old are you?">
+    </div> 
+   
+    <button class= "button" type="submit">Submit</button><br>
+    <button class= "button" type="reset">Reset</button>
+      </form>
+      </div>
+
+      <p id=result></p>
+    
+      
+        
+
+</body>
+</html>

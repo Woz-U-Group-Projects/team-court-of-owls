@@ -1,0 +1,73 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(5, 185, 56);
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#div  {
+    padding: 15px 20px 25px 30px;
+    background-color:green;
+    border: 2px solid whitesmoke;
+   
+  }
+
+  h1 {
+      color:white;
+      text-align: center;
+  }
+  
+  
+  #tree {
+  height: 100px;
+  display: block;
+  float:left 10px;
+  width: 80px;
+  position: absolute;
+  }
+
+  .gene-form {
+  background-color: rgb(199, 235, 92);
+  border: 2px solid whitesmoke;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  position: relative;
+    
+}
+
+.group, .button {
+  display: block;
+  padding: 15px;
+}
+
+input, .button{
+  height: 55px;
+  width: 320px;
+ padding: 15px;
+ border: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  color: black;
+  background-color: rgb(91, 228, 50);
+  
+}
+
+.button:hover {
+  color: whitesmoke;
+  background-color: green;
+}
+  
