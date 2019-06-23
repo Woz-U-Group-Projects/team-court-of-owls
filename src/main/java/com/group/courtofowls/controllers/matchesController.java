@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/api")
 public class matchesController {
 	
-	@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/matches")
 	public personalInfo[] getValues(){
 	  return new personalInfo[] {};

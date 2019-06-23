@@ -25,8 +25,8 @@ public class personalInfoController {
 	
 	
 	@GetMapping("/info")
-	public List<personalInfo> get(){
-		return individualRepository.findAll();
+	public List<personalInfo> getFamily(){
+		return individualRepository.findById(lastname)();
 	}
 	
 	@PostMapping()

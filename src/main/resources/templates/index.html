@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
   <head>
-    <title>Geneology App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   <title>Genealogy App</title>
 
     <link rel= "stylesheet" href="gene.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	
   </head>
-  <style></style>
+  
   <body>
       <div id= "div">
-          <center>
-              <h1>
-                 The Geneology App 
-                </h1> 
-            </center>
-        
+       <img id= "tree" src="tree.jpg" alt= "tree of life">
+        <h1> The Genealogy App </h1>       
         </div>
+        <div id= "container">
+        <form class="gene-form" action="/info" method ="GET">
+    <h1>Find your Family</h1>
+   <div class="group">
+    <label for= "firstname" >First Name</label><br/>
+      <input type="text" name="firstname"id="first" required placeholder="What is your first name?"/>
+   </div>
+    <div class="group">
+      <label for="lastname">Last Name </label><br/>
+    <input type="text" id="lastname" name="last"
+           placeholder="What is your last name?">
+    </div> 
+    <div class="group">
+      <label for="age">Age</label><br/>
+    <input type="number" id="age" name="age" min="1"
+    max ="120" placeholder= "How old are you?">
+    </div> 
+   
+    <button class= "button" type="submit">Submit</button><br>
+    <button class= "button" type="reset">Reset</button>
+      </form>
+      </div>
 
-        <p1></p1>
-        <br>
-        <label for="firstName">First Name:</label>
+      <p id=result></p>
+    
+      
         
-
-        <input id="firstName" type="text" placeholder="What's your First Name?">
-        
-        <br>
-        <br>
-        
-        <label for="lastName">Last Name:</label>
-        
-        <input id="lastName" type="text" placeholder="What's your Last Name?">
-        
-        <br>
-        <br>
-
-        
-        <label for="birthdate">Birth Day:</label>
-        
-        <input id="birthdate" type="text" placeholder="When were you born?">
-        
-        <br>
-        <br>
-
-    <button onclick="alert('One Moment Please...')">Submit!</button>
 
 </body>
 </html>
